@@ -25,7 +25,7 @@ def find_version(fname):
         raise RuntimeError('Cannot find version information')
     return version
 
-__version__ = find_version('marshmallow_sqlalchemy/__init__.py')
+__version__ = find_version('marshmallow_sqlalchemy_j/__init__.py')
 
 
 def read(fname):
@@ -34,15 +34,15 @@ def read(fname):
     return content
 
 setup(
-    name='marshmallow-sqlalchemy',
+    name='marshmallow-sqlalchemy-j',
     version=__version__,
     description='SQLAlchemy integration with the marshmallow (de)serialization library',
     long_description=read('README.rst'),
     author='Steven Loria',
     author_email='sloria1@gmail.com',
-    url='https://github.com/marshmallow-code/marshmallow-sqlalchemy',
+    url='https://github.com/gAdrev/marshmallow-sqlalchemy',
     packages=find_packages(exclude=("test*", )),
-    package_dir={'marshmallow-sqlalchemy': 'marshmallow-sqlalchemy'},
+    package_dir={'marshmallow-sqlalchemy-j': 'marshmallow-sqlalchemy-j'},
     include_package_data=True,
     install_requires=REQUIRES,
     license='MIT',
